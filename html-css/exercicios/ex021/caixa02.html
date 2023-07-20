@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgba(65, 65, 68, 0.521);
+            margin: 0px;
+        }
+        header{
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 4px 5px 0px #0000004f;
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        article {
+            background-color: lightblue;
+            padding: 5px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            
+        }
+        article > aside{
+            background-color: aqua;
+        }
+        nav{
+            background-color: rgb(139, 134, 134);
+            padding: 5px;
+            box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        article > p{
+            text-align: justify;
+        }
+        aside > p{
+            text-align: right;
+            padding-right: 20px;
+            font-weight: bolder ;
+        }
+        #developer > a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bolder;
+        }
+        #developer > a:hover{
+           color: blue;
+           text-decoration: underline;
+        }
+        footer > p{
+            margin: 4px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, Brasil e Política.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam asperiores aperiam corporis nemo quibusdam mollitia, id repudiandae. Nobis neque officiis optio mollitia et obcaecati placeat expedita in quibusdam perferendis.</p>
+                <aside>
+                    <p>Artigo escrito por Gab</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p id="developer">Desenvolvido por <a href="https://gustavoguanabara.github.io" target="_blank" rel="next">@DevGab</a></p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
